@@ -9,6 +9,9 @@ use Illuminate\Validation\ValidationException;
 
 class UserController extends Controller
 {
+     /**
+     * Inicio de sesión y regresa el token para realizar otras funciones.
+     */
     public function userLogin(Request $request)
     {
         $request->validate([

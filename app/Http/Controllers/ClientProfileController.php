@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Validator;
 class ClientProfileController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Muestra el listado de todos los clientes
      */
     public function index()
     {
@@ -19,20 +17,7 @@ class ClientProfileController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreClientProfileRequest  $request
-     * @return \Illuminate\Http\Response
+     * Guarda la información de un nuevo cliente.
      */
     public function store(Request $request)
     {
@@ -57,10 +42,7 @@ class ClientProfileController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ClientProfile  $clientProfile
-     * @return \Illuminate\Http\Response
+     * Muestra la información de un cliente según el id.
      */
     public function show($id)
     {
@@ -70,22 +52,7 @@ class ClientProfileController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\ClientProfile  $clientProfile
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ClientProfile $clientProfile)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateClientProfileRequest  $request
-     * @param  \App\Models\ClientProfile  $clientProfile
-     * @return \Illuminate\Http\Response
+     * Actualiza la información del cliente según el id.
      */
     public function update(Request $request, $id)
     {
@@ -94,10 +61,7 @@ class ClientProfileController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\ClientProfile  $clientProfile
-     * @return \Illuminate\Http\Response
+     * Elimina el cliente según el id.
      */
     public function destroy($id)
     {
